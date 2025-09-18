@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "BIM轻量化技术深度解析：原理、动机与实施路径"
-author:       "Xiao"
+author:       "HuXiao"
 header-style: text
 catalog:      true
 tags:

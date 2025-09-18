@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "面向智慧城市应用的跨领域数据集成策略：BIM、GIS及动态数据融合研究综述"
-author:       "Xiao"
+author:       "HuXiao"
 header-style: text
 catalog:      true
 tags:
@@ -265,5 +265,18 @@ Twitter等社交媒体平台是获取实时道路状况信息（如事故、拥�
 | **关键技术 (Key Technologies)** | BIM, GIS, DCEs (InfoWorks, VISSIM) | BIM, GIS, IoT, Semantic Web (RDF, OWL) | BIM, GIS, Semantic Web (GeoSPARQL, owl:sameAs) | BIM (IFC), FDS, Revit API | BIM, GIS, Semantic Web (SPARQL, SWRL) | NLP (BERT), GIS, VRM (VISSIM) |
 | **应用领域 (Application Domain)** | 城市洪水与交通韧性 | 智慧出行、公共安全 | 智慧出行、城市规划 | 建筑消防安全、结构分析 | 城市灾害管理、基础设施韧性 | 智能交通系统、实时路况管理 |
 | **主要贡献 (Key Contribution)** | 提出了一个务实的、基于物理仿真的多系统协同评估框架。 | 构建了从静态到动态、从室内到室外的完整语义行人网络建模方法。 | 详细阐述了利用语义查询和逻辑推理实现BIM-GIS实例链接的技术路径。 | 实现了特定BIM与CFD软件间的双向、深度信息交换，支持性能化设计。 | 提出了一个通用的、支持自动推理的语义框架，用于多系统韧性决策。 | 解决了从嘈杂的社交媒体数据中自动提取结构化、关联性道路信息并注入交通模型的难题。 |  
+
+## **参考文献**
+1. Yang Y, Ng S T, Dao J, et al. BIM-GIS-DCEs enabled vulnerability assessment of interdependent infrastructures–A case of stormwater drainage-building-road transport Nexus in urban flooding[J]. Automation in Construction, 2021, 125: 103626.
+
+2. Dao J. BIM-GIS-IoT-based semantic pedestrian network modelling and applications in high-density cities[J]. HKU Theses Online (HKUTO), 2023.
+
+3. Dao J, Ng S T, Kwok C Y. Interlinking BIM and GIS data for a semantic pedestrian network and applications in high-density cities[J]. Developments in the Built Environment, 2024, 17: 100367.
+
+4. Shi J, Dao J, Jiang L, et al. Research on IFC‐and FDS‐Based Information Sharing for Building Fire Safety Analysis[J]. Advances in Civil Engineering, 2019, 2019(1): 3604369.
+
+5. Dao J, Ng S T, Yang Y, et al. Semantic framework for interdependent infrastructure resilience decision support[J]. Automation in Construction, 2021, 130: 103852.
+
+6. Zhou S, Ng S T, Huang G, et al. Extracting interrelated information from road-related social media data[J]. Advanced Engineering Informatics, 2022, 54: 101780.
 
 

@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "GIS、BIM与IoT综合参考：技术标准、核心软件及基本概念解析"
-author:       "Xiao"
+author:       "HuXiao"
 header-style: text
 catalog:      true
 tags:
