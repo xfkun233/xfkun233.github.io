@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "一种可能的BIM-GIS可视化平台的实施方案",
+      "subtitle" : "",
+      "tags"     : "BIM, GIS, Integration, Plan",
+      "url"      : "/2025/09/28/a-possible-bim-gis-plan/",
+      "date"     : "2025-09-28 00:00:00 +0000"
+    } ,
+  
+    {
       "title"    : "面向智慧城市应用的跨领域数据集成策略：BIM、GIS及动态数据融合研究综述",
       "subtitle" : "",
       "tags"     : "BIM, GIS, Review",
@@ -21,14 +29,6 @@
       "subtitle" : "",
       "tags"     : "BIM, Lightweighting",
       "url"      : "/2025/09/18/bim-Lightweighting/",
-      "date"     : "2025-09-18 00:00:00 +0000"
-    } ,
-  
-    {
-      "title"    : "一种可能的BIM-GIS可视化平台的实施方案",
-      "subtitle" : "",
-      "tags"     : "BIM, GIS, Integration, Plan",
-      "url"      : "/2025/09/18/a-possible-bim-gis-plan/",
       "date"     : "2025-09-18 00:00:00 +0000"
     } 
   
