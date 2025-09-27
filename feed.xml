@@ -5,8 +5,8 @@
     <description>这里是 @xfkun233</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 27 Sep 2025 19:21:40 +0000</pubDate>
-    <lastBuildDate>Sat, 27 Sep 2025 19:21:40 +0000</lastBuildDate>
+    <pubDate>Sat, 27 Sep 2025 19:24:20 +0000</pubDate>
+    <lastBuildDate>Sat, 27 Sep 2025 19:24:20 +0000</lastBuildDate>
     <generator>Jekyll v4.4.1</generator>
     
       <item>
@@ -283,7 +283,7 @@
 
 &lt;p&gt;这一步骤的意义远不止于格式转换，它是一个关键的优化过程。原始的IFC模型是为工程设计服务的，包含了极高的几何精度和复杂的结构，直接在Web浏览器中渲染会造成严重的性能问题。3D Tiles格式的核心优势在于其内置的层次细节（Level of Detail, LOD）机制，它允许渲染引擎根据视点距离动态加载不同复杂度的模型，从而实现大规模场景的流畅可视化。&lt;/p&gt;
 
-&lt;p&gt;因此，我们的”自研脚本”或工具链必须实现几何简化（Mesh Decimation）和构件的层级化组织，以生成高质量的LOD。例如，当视点远离建筑时，只加载一个低多边形的建筑外壳瓦片；随着视点靠近，逐步加载包含外墙细节、窗户、乃至室内构件的更高精度瓦片。若忽略LOD的生成，即便格式转为3D Tiles，其性能表现也可能不尽人意，违背了采用此技术的初衷。&lt;/p&gt;
+&lt;p&gt;因此，需要开发”自研脚本”或工具链来实现几何简化（Mesh Decimation）和构件的层级化组织，以生成高质量的LOD。例如，当视点远离建筑时，只加载一个低多边形的建筑外壳瓦片；随着视点靠近，逐步加载包含外墙细节、窗户、乃至室内构件的更高精度瓦片。若忽略LOD的生成，即便格式转为3D Tiles，其性能表现也可能不尽人意，违背了采用此技术的初衷。&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;可能的工具链:&lt;/strong&gt;&lt;/p&gt;
 
