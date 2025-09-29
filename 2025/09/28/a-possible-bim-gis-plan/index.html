@@ -280,14 +280,14 @@
 
 <ul>
   <li>
-    <p><strong>数据处理层 (Python)</strong>: 此层作为系统的”数据引擎”，负责执行计算密集型的离线数据处理任务。利用Python强大的生态系统，通过专门的脚本对原始BIM和GIS数据进行解析、转换和优化。例如，使用IfcOpenShell库处理IFC文件，提取其几何与语义信息 1；使用GDAL/OGR库对各类GIS数据进行格式转换与坐标重投影。这一层的工作是后续所有数据服务和可视化的基础。</p>
+    <p><strong>数据处理层 (Python)</strong>: 此层作为系统的”数据引擎”，负责执行计算密集型的离线数据处理任务。利用Python强大的生态系统，通过专门的脚本对原始BIM和GIS数据进行解析、转换和优化。例如，使用IfcOpenShell库处理IFC文件，提取其几何与语义信息 ；使用GDAL/OGR库对各类GIS数据进行格式转换与坐标重投影。这一层的工作是后续所有数据服务和可视化的基础。</p>
   </li>
   <li>
     <p><strong>数据持久化层 (PostGIS)</strong>: PostGIS数据库是整个系统的核心数据仓库，扮演着”唯一真实数据源”的角色。所有经过处理的BIM属性数据和GIS空间几何数据都将在此集中存储和管理。PostGIS不仅具备企业级关系型数据库的稳定性和事务一致性，更重要的是，它提供了对空间数据类型、空间索引和空间分析函数的强大支持，是存储异构BIM和GIS数据的理想选择。</p>
   </li>
   <li><strong>数据服务层 (GeoServer &amp; Node.js)</strong>: 本方案采用一种混合服务策略，以实现性能与标准的最佳平衡。
     <ul>
-      <li><strong>GeoServer</strong>: 作为业界领先的开源地理信息发布平台，GeoServer将负责发布存储在PostGIS中的标准化OGC（开放地理空间信息联盟）服务，如WMS（网络地图服务）和WFS（网络要素服务）4。这确保了传统2D GIS数据的良好兼容性和互操作性。</li>
+      <li><strong>GeoServer</strong>: 作为业界领先的开源地理信息发布平台，GeoServer将负责发布存储在PostGIS中的标准化OGC（开放地理空间信息联盟）服务，如WMS（网络地图服务）和WFS（网络要素服务）。这确保了传统2D GIS数据的良好兼容性和互操作性。</li>
       <li><strong>Node.js API</strong>: 针对性能要求极高的3D数据流（如3D Tiles）和复杂的业务逻辑查询，我们设计了一个基于Node.js的定制化API。Node.js的异步、非阻塞I/O模型使其非常适合构建高并发、低延迟的数据接口，为前端提供流畅的3D模型加载和实时属性查询能力。</li>
     </ul>
   </li>
@@ -309,7 +309,7 @@
 
 <ol>
   <li><strong>输入</strong>: 原始的IFC格式建筑信息模型文件。</li>
-  <li><strong>处理</strong>: Python脚本启动处理流程。首先，利用IfcOpenShell库解析IFC文件，精确提取出每一个建筑构件（如墙、板、柱）的几何形状数据和丰富的语义属性信息（如材质、厂商、成本等Property Sets）1。</li>
+  <li><strong>处理</strong>: Python脚本启动处理流程。首先，利用IfcOpenShell库解析IFC文件，精确提取出每一个建筑构件（如墙、板、柱）的几何形状数据和丰富的语义属性信息（如材质、厂商、成本等Property Sets）。</li>
   <li><strong>转换与优化</strong>: 提取出的几何数据将被转换为Web优化的glTF格式，并进一步处理成3D Tiles格式。这一步至关重要，它通过生成多层次细节（LOD）来优化模型，确保在Web端能够流畅加载和渲染大规模复杂模型。</li>
   <li><strong>存储</strong>: 转换过程中提取的语义属性数据，将与构件的唯一标识符（GlobalId）一同存入PostGIS数据库。</li>
   <li><strong>服务</strong>: 经过优化的3D Tiles文件集由Node.js API以静态文件或流式服务的形式提供给前端。</li>
