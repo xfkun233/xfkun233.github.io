@@ -4,11 +4,6 @@ title:        "11月5日论文阅读笔记"
 author:       "HuXiao"
 header-style: text
 catalog:      true
-tags:
-    - BIM
-    - GIS
-    - Integration
-    - Plan
 ---
 
 
